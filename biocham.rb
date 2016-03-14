@@ -5,7 +5,11 @@ class Biocham < Formula
   version "4.0.20160314"
   sha256 "e831393d3bf75844ea463d71d697334591d8f004ca8036c53dcb9377aa48386c"
 
-  depends_on "swi-prolog", "gsl", "libsbml", "gnuplot", "graphviz"
+  depends_on "swi-prolog"
+  depends_on "gsl"
+  depends_on "libsbml"
+  depends_on "gnuplot"
+  depends_on "graphviz"
 
   def install
     system "make"
